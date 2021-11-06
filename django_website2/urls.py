@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("website.urls")),
     path('text_edit/', include("text_edit.urls")),
+    
 ]
