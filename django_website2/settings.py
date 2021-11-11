@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
-    'website'
+    'website',
+    'text_edit',
 ]
 
 MIDDLEWARE = [

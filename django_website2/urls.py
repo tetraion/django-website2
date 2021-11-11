@@ -15,8 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from website import views as web
+from text_edit import views as text
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include("website.urls")),
+    path('', web.IndexView.as_view()),
+    path('about/', web.AboutView.as_view()),
+    path('text_edit/', text.Index.as_view()),
 ]
