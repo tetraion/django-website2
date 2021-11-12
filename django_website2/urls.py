@@ -17,10 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from website import views as web
 from text_edit import views as text
+from blog import views as blog
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', web.IndexView.as_view()),
     path('about/', web.AboutView.as_view()),
     path('text_edit/', text.Index.as_view()),
+    path('blog/', include("blog.urls")),
 ]
