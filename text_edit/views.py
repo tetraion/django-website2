@@ -5,7 +5,7 @@ from . import forms
 
 class Index(FormView):
     form_class = forms.TextForm
-    template_name = "text.html"
+    template_name = "text_edit.html"
 
     def form_valid(self, form):
         data = form.cleaned_data
