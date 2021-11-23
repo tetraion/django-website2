@@ -13,4 +13,16 @@
     no_list
     {% endfor %}
 </ul>
+<h2>資格</h2>
+<ul>
+    {% for license in licenses %}
+    <li>{{license}}</li>
+    {% empty %}
+    no_list
+    {% endfor %}
+</ul>
+<h3>成果物</h3>
+<p>javascript</p>
+<li><a href="https://tetraion.github.io/practice_j2/">TODOリスト</a></li>
+<li><a href="https://tetraion.github.io/HEBI/">ヘビゲーム</a></li>
 {% endblock %}

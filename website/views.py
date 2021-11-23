@@ -18,7 +18,10 @@ class AboutView(TemplateView):
             "python",
             "C++",
             "Javascript",
-
+        ]
+        ctxt["licenses"]=[
+            "基本情報技術者",
+            "Oracle Certified Java Programmer Gold SE 11",
         ]
         return ctxt
 
